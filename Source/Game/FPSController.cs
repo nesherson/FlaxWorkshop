@@ -36,6 +36,15 @@ public class FPSController : Script
         _mouseY = Math.Clamp(_mouseY, -90, 90);
 
         Camera.EulerAngles = new Vector3(_mouseY, _mouseX, 0);
+
+        if (Input.GetAction("Jump"))
+        {
+            if (_jumpCount == 0)
+            {
+                _yVelocity = JumpForce;
+                _jumpCount++;
+            }
+        }
     }
 
     public override void OnFixedUpdate()
@@ -53,5 +62,16 @@ public class FPSController : Script
         var velocity = direction * Speed * Time.DeltaTime;
         
         CharacterController.Move(velocity);
+        
+        _yVelocity -= _gravity * Time.DeltaTime;
+
+        CharacterController.Move(new Vector3(0, _yVelocity, 0) * Time.DeltaTime);
+        
+        if (CharacterController.IsGrounded)
+        {
+            _jumpCount = 0;
+            _yVelocity = 0;
+        }
+        
     }
 }
