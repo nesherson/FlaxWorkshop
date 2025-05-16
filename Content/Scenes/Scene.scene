@@ -96,12 +96,12 @@
 			"Transform": {
 				"Translation": {
 					"X": 739.6085815429688,
-					"Y": 84.68147277832031,
+					"Y": 159.68145751953125,
 					"Z": -0.160736083984375
 				},
 				"Scale": {
 					"X": 0.20841819047927856,
-					"Y": 1.5,
+					"Y": 3.429652452468872,
 					"Z": 15.0
 				}
 			},
@@ -115,6 +115,22 @@
 						"ReceiveDecals": true
 					}
 				]
+			}
+		},
+		{
+			"ID": "bd04bd8a44de533bc8f990a88467875c",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "cc58b93b4ca4646897b05babdd429dc2",
+			"Name": "BoxCollider",
+			"Center": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -0.0000020345053144410485
+			},
+			"Size": {
+				"X": 99.99989318847656,
+				"Y": 100.0,
+				"Z": 100.00000762939453
 			}
 		},
 		{
@@ -125,12 +141,12 @@
 			"Transform": {
 				"Translation": {
 					"X": -738.3914184570313,
-					"Y": 84.68147277832031,
+					"Y": 159.68145751953125,
 					"Z": -0.160736083984375
 				},
 				"Scale": {
 					"X": 0.20841819047927856,
-					"Y": 1.5,
+					"Y": 3.429652452468872,
 					"Z": 15.0
 				}
 			},
@@ -144,6 +160,22 @@
 						"ReceiveDecals": true
 					}
 				]
+			}
+		},
+		{
+			"ID": "a5fad0bf416b0ba45f383b9b4f7ba1d9",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "6b560c4d416776401bdf3db8e7817235",
+			"Name": "BoxCollider",
+			"Center": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -0.0000020345053144410485
+			},
+			"Size": {
+				"X": 99.99989318847656,
+				"Y": 100.0,
+				"Z": 100.00000762939453
 			}
 		},
 		{
@@ -154,7 +186,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 1.60858154296875,
-					"Y": 84.68147277832031,
+					"Y": 159.68145751953125,
 					"Z": 740.0
 				},
 				"Orientation": {
@@ -165,7 +197,7 @@
 				},
 				"Scale": {
 					"X": 0.20841819047927856,
-					"Y": 1.5,
+					"Y": 3.429652452468872,
 					"Z": 15.0
 				}
 			},
@@ -182,6 +214,12 @@
 			}
 		},
 		{
+			"ID": "db363a0a4c68507164445b9c501f5b6c",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "ce287a35465e0f08998914af0e450046",
+			"Name": "BoxCollider"
+		},
+		{
 			"ID": "e595e20d4ffee1df6c2400a9c18d6952",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "9e9521fa492fb6d153cc34a02d8128fe",
@@ -189,7 +227,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 1.60858154296875,
-					"Y": 84.68147277832031,
+					"Y": 159.68145751953125,
 					"Z": -740.0
 				},
 				"Orientation": {
@@ -200,7 +238,7 @@
 				},
 				"Scale": {
 					"X": 0.20841819047927856,
-					"Y": 1.5,
+					"Y": 3.429652452468872,
 					"Z": 15.0
 				}
 			},
@@ -215,6 +253,12 @@
 					}
 				]
 			}
+		},
+		{
+			"ID": "b6d067a741aa1375665783ad283539cf",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "e595e20d4ffee1df6c2400a9c18d6952",
+			"Name": "BoxCollider"
 		},
 		{
 			"ID": "97459a6441beec404b29e39d143e9fe0",
@@ -238,8 +282,8 @@
 	"CharacterController": "97459a6441beec404b29e39d143e9fe0",
 	"Camera": "f8c706a14cb74264ba7e629abea7eccb",
 	"MouseSensitivity": 0.5,
-	"Speed": 500.0,
-	"JumpForce": 500.0
+	"Speed": 650.0,
+	"JumpForce": 1000.0
 }
 		},
 		{
